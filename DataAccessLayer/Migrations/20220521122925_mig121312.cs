@@ -4,7 +4,7 @@
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class mig1 : Migration
+    public partial class mig121312 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,6 +60,20 @@ namespace DataAccessLayer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sizes", x => x.SizeId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                 });
 
             migrationBuilder.CreateTable(
@@ -194,6 +208,11 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserId", "Password", "UserName" },
+                values: new object[] { 1, "admin", "admin" });
+
+            migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductID", "CategoryId", "ColorId", "CompanyId", "Description", "ImageUrl", "Name", "Price", "Status" },
                 values: new object[,]
@@ -218,7 +237,7 @@ namespace DataAccessLayer.Migrations
                     { 4, "lorem ıpsum", true, "ucuz bayıldım", "Ahmet", 3 },
                     { 5, "lorem ıpsum", true, "İnanılmaz", "Mahir", 4 },
                     { 6, "lorem ıpsum", true, "Yırtık geldi", "Eren", 5 },
-                    { 7, "lorem ıpsum", true, "Bir Tanede kardeşime aldım", "İsmimi vermek istemiyorum", 5 }
+                    { 7, "lorem ıpsum", true, "Bir Tanede kardeşime aldım", "İsmimi vermek istemiyorum", 6 }
                 });
 
             migrationBuilder.InsertData(
@@ -280,6 +299,9 @@ namespace DataAccessLayer.Migrations
 
             migrationBuilder.DropTable(
                 name: "ProductSizes");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Products");

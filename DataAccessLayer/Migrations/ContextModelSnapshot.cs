@@ -193,7 +193,7 @@ namespace DataAccessLayer.Migrations
                             CommentStatus = true,
                             CommentTitle = "Bir Tanede kardeşime aldım",
                             CommentUserName = "İsmimi vermek istemiyorum",
-                            ProductId = 5
+                            ProductId = 6
                         });
                 });
 

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220521115746_mig_add_adminuser")]
-    partial class mig_add_adminuser
+    [Migration("20220521122925_mig121312")]
+    partial class mig121312
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -195,7 +195,7 @@ namespace DataAccessLayer.Migrations
                             CommentStatus = true,
                             CommentTitle = "Bir Tanede kardeşime aldım",
                             CommentUserName = "İsmimi vermek istemiyorum",
-                            ProductId = 5
+                            ProductId = 6
                         });
                 });
 

@@ -20,11 +20,7 @@ namespace DataAccessLayer.Concrete.EntityConfig
                 new Comment { CommentID=4, CommentTitle="ucuz bayıldım" , CommentContent="lorem ıpsum", CommentUserName="Ahmet", ProductId=3,CommentStatus=true},
                 new Comment { CommentID=5, CommentTitle="İnanılmaz" , CommentContent="lorem ıpsum", CommentUserName="Mahir", ProductId=4,CommentStatus=true},
                 new Comment { CommentID=6, CommentTitle="Yırtık geldi" , CommentContent="lorem ıpsum", CommentUserName="Eren", ProductId=5,CommentStatus=true},
-                new Comment { CommentID=7, CommentTitle="Bir Tanede kardeşime aldım" , CommentContent="lorem ıpsum", CommentUserName="İsmimi vermek istemiyorum", ProductId=6,CommentStatus=true},
-                new Comment { CommentID=8, CommentTitle="Bir Tanede teyzeme aldım" , CommentContent="lorem ıpsum", CommentUserName="Ezgi", ProductId=7,CommentStatus=true},
-                new Comment { CommentID=9, CommentTitle="Bir Tanede ablama aldım" , CommentContent="lorem ıpsum", CommentUserName="Esra", ProductId=8,CommentStatus=true},
-                new Comment { CommentID=10, CommentTitle="Bir Tanede kuzenime aldım" , CommentContent="lorem ıpsum", CommentUserName="Miko", ProductId=9,CommentStatus=true},
-                new Comment { CommentID=11, CommentTitle="Bir Tanede babama aldım" , CommentContent="lorem ıpsum", CommentUserName="Eren", ProductId=4,CommentStatus=true}
+                new Comment { CommentID=7, CommentTitle="Bir Tanede kardeşime aldım" , CommentContent="lorem ıpsum", CommentUserName="İsmimi vermek istemiyorum", ProductId=6,CommentStatus=true}
                 );
         }
     }
